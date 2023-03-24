@@ -1,0 +1,56 @@
+{
+  "author": "flaX1k",
+  "description": "Get the personal events and moon phases from the Google calendar.",
+  "gateway_specific_settings": {
+    "webthings": {
+      "exec": "{nodeLoader} {path}",
+      "primary_type": "adapter",
+      "strict_max_version": "*",
+      "strict_min_version": "0.10.0"
+    }
+  },
+  "homepage_url": "https://github.com/flax1k/calendar#readme",
+  "id": "calendar",
+  "license": "MPL-2.0",
+  "manifest_version": 1,
+  "name": "Calendar events",
+  "options": {
+    "default": {
+      "units": "metric",
+      "apiKey": "",
+      "pollInterval": 10
+    },
+    "schema": {
+      "type": "object",
+      "required": [
+        "units",
+        "apiKey",
+        "pollInterval"
+      ],
+      "properties": {
+        "units": {
+          "title": "Units",
+          "description": "Units to use, i.e. imperial for \u02daF, metric for \u02daC",
+          "type": "string",
+          "enum": [
+            "metric",
+            "imperial"
+          ]
+        },
+        "apiKey": {
+          "title": "API Key",
+          "description": "API key for the Google calendar",
+          "type": "string"
+        },
+        "pollInterval": {
+          "title": "Poll Interval",
+          "description": "Interval in minutes at which to poll the provider",
+          "type": "integer",
+          "minimum": 10
+        }
+      }
+    }
+  },
+  "short_name": "Calendar events",
+  "version": "0.0.1"
+}

@@ -1,0 +1,47 @@
+{
+  "version": "0.0.1",
+  "name": "calendar",
+  "display_name": "Calendar",
+  "description": "Get the events and moon phases from the Google calendar.",
+  "author": "flaX1k",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "iot",
+    "adapter",
+    "calendar",
+    "events",
+    "moon phases"
+  ],
+  "homepage": "https://github.com/flax1k/calendar#readme",
+  "license": "MPL-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flax1k/calendar.git"
+  },
+  "bugs": {
+    "url": "https://github.com/flax1k/calendar/issues"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.17.0"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "SHA256SUMS",
+    "index.js",
+    "lib/provider/accuweather.js",
+    "lib/provider/darksky.js",
+    "lib/provider/openweathermap.js",
+    "lib/provider/provider.js",
+    "lib/provider/wunderground.js",
+    "lib/calendar.js",
+    "lib/calendar-device.js",
+    "lib/calendar-property.js",
+    "manifest.json",
+    "node_modules"
+  ]
+}
